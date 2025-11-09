@@ -1,0 +1,126 @@
+# Reference this view as main__hospital_general_information
+schema: main
+table_name: Hospital_General_Information
+
+dimensions:
+  facility_id:
+    sql: '"Facility ID"'
+    format: ID
+
+  facility_name:
+    sql: '"Facility Name"'
+
+  address:
+    sql: '"Address"'
+
+  city_town:
+    sql: '"City/Town"'
+
+  state:
+    sql: '"State"'
+
+  zip_code:
+    sql: '"ZIP Code"'
+
+  county_parish:
+    sql: '"County/Parish"'
+
+  telephone_number:
+    sql: '"Telephone Number"'
+
+  hospital_type:
+    sql: '"Hospital Type"'
+
+  hospital_ownership:
+    sql: '"Hospital Ownership"'
+
+  emergency_services:
+    sql: '"Emergency Services"'
+
+  meets_criteria_for_promoting_interoperability_of_ehrs:
+    sql: '"Meets criteria for promoting interoperability of EHRs"'
+
+  meets_criteria_for_birthing_friendly_designation:
+    sql: '"Meets criteria for birthing friendly designation"'
+
+  hospital_overall_rating:
+    sql: '"Hospital overall rating"'
+
+  hospital_overall_rating_footnote:
+    sql: '"Hospital overall rating footnote"'
+
+  mort_group_measure_count:
+    sql: '"MORT Group Measure Count"'
+
+  count_of_facility_mort_measures:
+    sql: '"Count of Facility MORT Measures"'
+
+  count_of_mort_measures_better:
+    sql: '"Count of MORT Measures Better"'
+
+  count_of_mort_measures_no_different:
+    sql: '"Count of MORT Measures No Different"'
+
+  count_of_mort_measures_worse:
+    sql: '"Count of MORT Measures Worse"'
+
+  mort_group_footnote:
+    sql: '"MORT Group Footnote"'
+
+  safety_group_measure_count:
+    sql: '"Safety Group Measure Count"'
+
+  count_of_facility_safety_measures:
+    sql: '"Count of Facility Safety Measures"'
+
+  count_of_safety_measures_better:
+    sql: '"Count of Safety Measures Better"'
+
+  count_of_safety_measures_no_different:
+    sql: '"Count of Safety Measures No Different"'
+
+  count_of_safety_measures_worse:
+    sql: '"Count of Safety Measures Worse"'
+
+  safety_group_footnote:
+    sql: '"Safety Group Footnote"'
+
+  readm_group_measure_count:
+    sql: '"READM Group Measure Count"'
+
+  count_of_facility_readm_measures:
+    sql: '"Count of Facility READM Measures"'
+
+  count_of_readm_measures_better:
+    sql: '"Count of READM Measures Better"'
+
+  count_of_readm_measures_no_different:
+    sql: '"Count of READM Measures No Different"'
+
+  count_of_readm_measures_worse:
+    sql: '"Count of READM Measures Worse"'
+
+  readm_group_footnote:
+    sql: '"READM Group Footnote"'
+
+  pt_exp_group_measure_count:
+    sql: '"Pt Exp Group Measure Count"'
+
+  count_of_facility_pt_exp_measures:
+    sql: '"Count of Facility Pt Exp Measures"'
+
+  pt_exp_group_footnote:
+    sql: '"Pt Exp Group Footnote"'
+
+  te_group_measure_count:
+    sql: '"TE Group Measure Count"'
+
+  count_of_facility_te_measures:
+    sql: '"Count of Facility TE Measures"'
+
+  te_group_footnote:
+    sql: '"TE Group Footnote"'
+
+measures:
+  count:
+    aggregate_type: count

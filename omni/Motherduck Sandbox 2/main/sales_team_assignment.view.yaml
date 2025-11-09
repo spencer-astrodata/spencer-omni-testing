@@ -1,0 +1,26 @@
+# Reference this view as main__sales_team_assignment
+schema: main
+table_name: sales_team_assignment
+
+dimensions:
+  first_name: {}
+  last_name: {}
+  manager_full_name: {}
+  facility_name: {}
+  primary_key: {}
+
+  manager_id:
+    format: ID
+
+  territory_id:
+    format: ID
+
+  facility_id:
+    format: ID
+
+  employee_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count

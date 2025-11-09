@@ -1,0 +1,39 @@
+# Reference this view as main__facility_utilization
+schema: main
+table_name: facility_utilization
+
+dimensions:
+  suff: {}
+  primary_key: {}
+
+  npi:
+    sql: '"NPI"'
+
+  ind_pac_id:
+    sql: '"Ind_PAC_ID"'
+    format: ID
+
+  provider_last_name:
+    sql: '"Provider Last Name"'
+
+  provider_first_name:
+    sql: '"Provider First Name"'
+
+  provider_middle_name:
+    sql: '"Provider Middle Name"'
+
+  procedure_category:
+    sql: '"Procedure_Category"'
+
+  count:
+    sql: '"Count"'
+
+  percentile:
+    sql: '"Percentile"'
+
+  profile_display_indicator:
+    sql: '"Profile_Display_Indicator"'
+
+measures:
+  count:
+    aggregate_type: count
