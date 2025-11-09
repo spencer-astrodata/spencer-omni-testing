@@ -1,0 +1,34 @@
+# Reference this view as main__facility_affiliation
+schema: main
+table_name: facility_affiliation
+
+dimensions:
+  suff: {}
+  facility_type: {}
+  primary_key: {}
+
+  npi:
+    sql: '"NPI"'
+
+  ind_pac_id:
+    sql: '"Ind_PAC_ID"'
+    format: ID
+
+  provider_last_name:
+    sql: '"Provider Last Name"'
+
+  provider_first_name:
+    sql: '"Provider First Name"'
+
+  provider_middle_name:
+    sql: '"Provider Middle Name"'
+
+  facility_affiliations_certification_number:
+    sql: '"Facility Affiliations Certification Number"'
+
+  facility_type_certification_number:
+    sql: '"Facility Type Certification Number"'
+
+measures:
+  count:
+    aggregate_type: count

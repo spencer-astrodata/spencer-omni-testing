@@ -1,0 +1,11 @@
+# Reference this view as main__county_fips_codes
+schema: main
+table_name: county_fips_codes
+
+dimensions:
+  county_fips: {}
+  county_name: {}
+
+measures:
+  count:
+    aggregate_type: count

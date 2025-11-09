@@ -1,0 +1,35 @@
+# Reference this view as main__hospital_myocard_return_summary
+schema: main
+table_name: hospital_myocard_return_summary
+
+dimensions:
+  facility_name: {}
+  state: {}
+  city: {}
+  zip: {}
+  county: {}
+  phone_number: {}
+  condition_name: {}
+  num_patients: {}
+  num_patients_returned: {}
+  return_rate: {}
+  start_date: {}
+  end_date: {}
+  months_captured: {}
+  nationwide_avg: {}
+  primary_key: {}
+  latitude: {}
+  longitude: {}
+  address: {}
+  sales_target: {}
+  sales_actual: {}
+
+  facility_id:
+    format: ID
+
+  condition_id:
+    format: ID
+
+measures:
+  count:
+    aggregate_type: count
